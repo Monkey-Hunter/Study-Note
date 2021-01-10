@@ -20,6 +20,6 @@ int main(){
     printf("%d\n", pa);
     printf("%d\n", *pa); // *pa가 가르키는 주소값이 b의 주소로 바뀌었으므로, *pa는 b의 값을 갖게 된다.
     
-
+    
     return 0;
 }
