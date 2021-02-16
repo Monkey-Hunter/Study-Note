@@ -5,9 +5,12 @@
 void bubble(int a[], int n){
     int i, j;
     for(i=0; i<n; i++){
+        int exchg = 0;      // 버블 정렬 시 요소의 교환횟수를 저장하는 인수
         for(j = n-1; j>i; j--)
-            if(a[j-1] > a[j])
+            if(a[j-1] > a[j]){
                 swap(int, a[j-1], a[j]);
-
+                exchg++;
+            }
+         if(exchg == 0) break;  // exchg==0이면 이미 정렬이 완료된 상태이므로 함수 종료
     }
 }
